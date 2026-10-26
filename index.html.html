@@ -187,5 +187,25 @@
           <p><strong>Technologies:</strong> Add the technologies used in your project.</p>
         </div>
       </div>
-    </section></body>
+    </section>
+  
+<div id="chatbot" style="position:fixed;bottom:20px;right:20px;z-index:9999;font-family:Arial;">
+  <button onclick="document.getElementById('chatbox').style.display='block'"
+    style="padding:12px 18px;border:0;border-radius:25px;background:#5b4bdb;color:white;cursor:pointer;">
+    💬 Chat with me
+  </button>
+
+  <div id="chatbox" style="display:none;background:white;border:1px solid #ddd;border-radius:12px;padding:15px;width:260px;margin-top:10px;box-shadow:0 2px 12px #ccc;">
+    <button onclick="document.getElementById('chatbox').style.display='none'"
+      style="float:right;">✕</button>
+    <h3>Portfolio Assistant</h3>
+    <p>Hello! Ask me about this portfolio.</p>
+    <input id="chatInput" placeholder="Type a message..."
+      style="width:95%;padding:8px;">
+    <button onclick="document.getElementById('chatReply').textContent='Thanks for your message! A real AI connection is needed for personalized answers.'"
+      style="margin-top:8px;padding:8px;">Send</button>
+    <p id="chatReply"></p>
+  </div>
+</div>
+</body>
 </html>
